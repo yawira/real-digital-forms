@@ -24,16 +24,19 @@ export default {
 
 <style module>
   .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    line-height: 1.15;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px;
+    display: block;
+    width: 50vw;
     height: 4.8rem;
-    width: 70%;
     border-width: 0;
-    margin: 1rem;
+    border-radius: .2rem;
+
     font-size: 1.4rem;
     font-weight: 700;
-    color: #fff;
-    background-color: #266ae9;
+    color: rgb(255, 255, 255);
+    background-color: #006cd1;
   }
 </style>

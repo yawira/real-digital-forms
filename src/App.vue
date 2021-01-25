@@ -2,10 +2,10 @@
   <div id="app">
     <real-digital-form action="https://httpbin.org/post" method="POST" ref="formWrapper">
       <real-digital-textfield name="name" validation="[a-zA-Z]+"></real-digital-textfield>
-      <p v-if="hasError('name')" class="error">Name contains invalid characters</p>
+      <p v-if="hasError('name')" class="error"><b>name</b> contains invalid characters</p>
 
       <real-digital-textfield name="phone" validation="[0-9]+"></real-digital-textfield>
-      <p v-if="hasError('phone')" class="error">Phone number contains invalid characters</p>
+      <p v-if="hasError('phone')" class="error"><b>phone number</b> contains invalid characters</p>
 
       <real-digital-textfield name="subject"></real-digital-textfield>
 
@@ -55,28 +55,12 @@ export default {
 };
 </script>
 
-<style lang="scss">
-
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-  height: 100%;
-}
-
-body {
-  height: 100%;
-}
-.app {
-  height: 100%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.error {
-  color: red;
-  margin: -0.5em 0 1em;
-  font-size: 1.4rem;
-}
+<style>
+  .error {
+    line-height: 1.25;
+    font-size: 1.2rem;
+    font-weight: 70px;
+    line-height: 1;
+    color: red;
+  }
 </style>

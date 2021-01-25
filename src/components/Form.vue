@@ -1,8 +1,8 @@
 <template>
-    <form :action="action" :method="method" @submit.prevent="submit">
-        <!-- form gets distributed here when rendered -->
-        <slot></slot>
-    </form>
+  <form class="form-wrapper" :action="action" :method="method" @submit.prevent="submit">
+      <!-- form gets distributed here when rendered -->
+      <slot></slot>
+  </form>
 </template>
 
 <script>
@@ -59,3 +59,10 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+  .form-wrapper {
+    display: grid;
+    justify-items: center;
+  }
+</style>

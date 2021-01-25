@@ -1,7 +1,7 @@
 <template>
-  <div class="formGroup">
-    <label class="label" v-text="name"></label>
-    <input type="text" class="input" v-model="inputValue" @input="change">
+  <div :class="$style.formGroup">
+    <label :class="$style.label" v-text="name"></label>
+    <input type="text" :class="$style.input" v-model="inputValue" @input="change">
   </div>
 </template>
 
@@ -27,7 +27,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style module lang="scss">
   .formGroup {
     margin-bottom: 1em;
     font-size: 1.4rem;
@@ -37,35 +37,28 @@ export default {
     margin-bottom: .8rem;
     line-height: 1.25;
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 70px;
     line-height: 1;
-    color: #a6a6a6;
-    transition-duration: .15s;
-    transition-timing-function: ease-in-out;
-    transition-property: margin-left;
+    margin: 3px;
+    color: #070649;
   }
   .input {
-    display: block;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 50vw;
     line-height: 1.15;
     order: 2;
-    height: 4.8rem;
+    height: 4rem;
     border: .1rem solid #d9d9d9;
     border-radius: .2rem;
     padding-left: 1.6rem;
     padding-right: 1.6rem;
-    color: #333;
+    color: #000000;
     font-size: 100%;
     &:hover,
     &:focus {
       outline: none;
-      border-color: #737373;
+      border-color: #000000;
     }
-  }
-  .errorField {
-    border-color: red;
-  }
-  .errorText {
-    color: red;
   }
 </style>
