@@ -1,8 +1,6 @@
 import Vue from 'vue';
 import App from './App.vue';
 
-import './axios-plugin';
-
 Vue.config.productionTip = false;
 
 /* render: function (createElement) {
