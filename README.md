@@ -1,29 +1,23 @@
-# forms-task
+# real-digital forms-task
+
+## Content
+
+```
+A series of Vue.js components that can send user-entered data to a server (http://httpbin.org).
+
+Task: Example snippet below should work as described after implementation.
+```
+
+<img src="src/assets/real-task.png" width="400" /><br>
 
 ## Project setup
+
 ```
 npm install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

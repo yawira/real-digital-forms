@@ -10,5 +10,5 @@ Vue.config.productionTip = false;
 }; */
 
 new Vue({
-  render: (h) => h(App), // root component gets rendered in div tag
+	render: h => h(App) // root component gets rendered in div tag
 }).$mount('#app'); // mounts instance to the DOM
